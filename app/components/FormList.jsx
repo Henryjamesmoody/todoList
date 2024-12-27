@@ -26,7 +26,7 @@ const deleteTask=(i)=>{
 
    if(mainTask.length>0){
   rendertask= mainTask.map((t,i)=>{
-    return <li key={{i}} className='flex gap-[20%] py-4 px-4 justify-start items-center border-b-2'>
+    return <li key={{i}} className='flex flex-wrap gap-[20%] py-4 px-4 justify-start items-center border-b-2'>
         <h2 className='-me-[15%] font-bold text-xl bg-emerald-600 rounded-full text-white w-[2rem] text-center'>{i+1}</h2>
         <h1 className='text-xl font-semibold w-28'>{t.title}</h1>
         <h4>{t.desc}</h4>
@@ -35,7 +35,7 @@ const deleteTask=(i)=>{
             deleteTask(i);
         }
         }
-        className='absolute right-16 px-5 py-2 bg-red-400 rounded-full hover:bg-red-500'>Delete</button>
+        className='px-5 py-2 bg-red-400 rounded-full hover:bg-red-500'>Delete</button>
         
     </li>
    });
