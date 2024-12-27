@@ -35,7 +35,7 @@ const deleteTask=(i)=>{
             deleteTask(i);
         }
         }
-        className='px-5 py-2 bg-red-400 rounded-full hover:bg-red-500'>Delete</button>
+        className='mt-5 px-5 py-2 bg-red-400 rounded-full hover:bg-red-500'>Delete</button>
         
     </li>
    });
